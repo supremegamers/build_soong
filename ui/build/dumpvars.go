@@ -157,11 +157,17 @@ var BannerVars = []string{
 func Banner(make_vars map[string]string) string {
 	b := &bytes.Buffer{}
 
-     fmt.Fprintln(b, "**************************************************************************")
-     fmt.Fprintln(b, "*                       Welcome to ProjectSakura                         *")
-     fmt.Fprintln(b, "*                By: @ChaiatanayaMittal && @LordShenron                  *")
-     fmt.Fprintln(b, "*       ------------------------------------------------------           *")
-     fmt.Fprintln(b, "**************************************************************************")
+     fmt.Fprintln(b, "==========================================================================")
+     fmt.Fprintln(b, "* ╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╭╮╱╭━━━╮╱╱╭╮                                            ")
+     fmt.Fprintln(b, "* ┃╭━╮┃╱╱╱╱╭╮╱╱╱╱╭╯╰╮┃╭━╮┃╱╱┃┃                                            ")
+     fmt.Fprintln(b, "* ┃╰━╯┣━┳━━╋╋━━┳━┻╮╭╯┃╰━━┳━━┫┃╭┳╮╭┳━┳━━╮                                  ")
+     fmt.Fprintln(b, "* ┃╭━━┫╭┫╭╮┣┫┃━┫╭━┫┃╱╰━━╮┃╭╮┃╰╯┫┃┃┃╭┫╭╮┃                                  ")
+     fmt.Fprintln(b, "* ┃┃╱╱┃┃┃╰╯┃┃┃━┫╰━┫╰╮┃╰━╯┃╭╮┃╭╮┫╰╯┃┃┃╭╮┃                                  ")
+     fmt.Fprintln(b, "* ╰╯╱╱╰╯╰━━┫┣━━┻━━┻━╯╰━━━┻╯╰┻╯╰┻━━┻╯╰╯╰╯                                  ")
+     fmt.Fprintln(b, "* ╱╱╱╱╱╱╱╱╭╯┃                                                             ")
+     fmt.Fprintln(b, "* ╱╱╱╱╱╱╱╱╰━╯                                                             ")
+     fmt.Fprintln(b, "* WELCOME TO PROJECT SAKURA                                               ")
+     fmt.Fprintln(b, "==========================================================================")
       fmt.Fprintf(b, "%s=%s\n", "SAKURA_VERSION", make_vars["SAKURA_VERSION"])
       fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION_CODENAME", make_vars["PLATFORM_VERSION_CODENAME"])
       fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION", make_vars["PLATFORM_VERSION"])
