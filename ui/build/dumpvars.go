@@ -137,6 +137,7 @@ func dumpMakeVars(ctx Context, config Config, goals, vars []string, write_soong_
 
 // Variables to print out in the top banner
 var BannerVars = []string{
+        "SAKURA_VERSION",
 	"PLATFORM_VERSION_CODENAME",
 	"PLATFORM_VERSION",
 	"LINEAGE_VERSION",
@@ -182,12 +183,12 @@ func Banner(make_vars map[string]string) string {
      fmt.Fprintln(b, "* ╱╱╱╱╱╱╱╱╰━╯                                                             ")
      fmt.Fprintln(b, "* WELCOME TO PROJECT SAKURA                                               ")
      fmt.Fprintln(b, "==========================================================================")
+      fmt.Fprintf(b, "%s=%s\n", "SAKURA_VERSION", make_vars["SAKURA_VERSION"])
       fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION_CODENAME", make_vars["PLATFORM_VERSION_CODENAME"])
       fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION", make_vars["PLATFORM_VERSION"])
       fmt.Fprintf(b, "%s=%s\n", "TARGET_PRODUCT", make_vars["TARGET_PRODUCT"])
       fmt.Fprintf(b, "%s=%s\n", "TARGET_BUILD_VARIANT", make_vars["TARGET_BUILD_VARIANT"])
       fmt.Fprintf(b, "%s=%s\n", "TARGET_BUILD_TYPE", make_vars["TARGET_BUILD_TYPE"])
-      fmt.Fprintf(b, "%s=%s\n", "TARGET_GCC_VERSION", make_vars["TARGET_GCC_VERSION"])
       fmt.Fprintf(b, "%s=%s\n", "TARGET_ARCH", make_vars["TARGET_ARCH"])
       fmt.Fprintf(b, "%s=%s\n", "TARGET_ARCH_VARIANT", make_vars["TARGET_ARCH_VARIANT"])
       fmt.Fprintf(b, "%s=%s\n", "TARGET_CPU_VARIANT", make_vars["TARGET_CPU_VARIANT"])
