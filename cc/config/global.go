@@ -123,6 +123,7 @@ var (
 		// http://b/161386391 for -Wno-pointer-to-int-cast
 		"-Wno-pointer-to-int-cast",
 		"-Werror=fortify-source",
+		"-Wno-unknown-warning-option",
 	}
 
 	IllegalFlags = []string{
