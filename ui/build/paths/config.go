@@ -74,6 +74,7 @@ func GetConfig(name string) PathConfig {
 }
 
 var Configuration = map[string]PathConfig{
+	"aapt2":   Allowed,
 	"bash":    Allowed,
 	"bison":   Allowed,
 	"brotli":  Allowed,
@@ -101,6 +102,7 @@ var Configuration = map[string]PathConfig{
 	"nproc":   Allowed,
 	"numfmt":  Allowed,
 	"openssl": Allowed,
+	"ota_from_target_files": Allowed,
 	"patch":   Allowed,
 	"perl":    Allowed,
 	"pstree":  Allowed,
@@ -114,6 +116,7 @@ var Configuration = map[string]PathConfig{
 	"python3.10": Allowed,
 	"rsync":   Allowed,
 	"sh":      Allowed,
+	"sign_target_files_apks": Allowed,
 	"tar":     Allowed,
 	"tr":      Allowed,
 	"unzip":   Allowed,
